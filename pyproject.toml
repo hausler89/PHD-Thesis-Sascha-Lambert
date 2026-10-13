@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lambert_thesis"
+version = "0.1.0"
+description = "Companion library to the dissertation of S. Lambert (2025): Bayesian inference for (active) Brownian systems."
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]

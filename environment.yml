@@ -1,0 +1,25 @@
+name: lambert-thesis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.15
+  - numpy=2.5.4
+  - scipy=1.18.1
+  - numba=0.68.0
+  - matplotlib=3.11.2
+  - pandas=3.0.6
+  - scikit-learn=1.9.1
+  - tqdm=4.70.1
+  - sympy=1.14.0
+  - emcee=3.1.6
+  - pymc=5.23.0
+  - arviz=0.23.4
+  - pytorch-cpu=2.14.1
+  - jupyterlab=4.6.4
+  - ipykernel=7.4.0
+  - nbconvert=7.17.2
+  - nbformat=5.11.1
+  - gxx=16.2.0   # C++ compiler for PyTensor (PyMC) on Windows
+  - pip
+  - pip:
+      - -e .
