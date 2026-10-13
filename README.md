@@ -1,6 +1,12 @@
-# Bayesian inference for active Brownian systems: dissertation code
+# Bayesian Inference in Stochastic Biological Systems: code
 
-Code for the figures of the dissertation. Entry points are the Jupyter notebooks in `notebooks/`; reusable pieces live in
+Code for the figures of the dissertation
+
+> S. Lambert, *Bayesian Inference in Stochastic Biological Systems*, doctoral thesis, Georg-August-Universität Göttingen
+> (2025), [doi:10.53846/goediss-11359](https://doi.org/10.53846/goediss-11359)
+> ([eDiss](https://ediss.uni-goettingen.de/handle/11858/16080)).
+
+Entry points are the Jupyter notebooks in `notebooks/`; reusable pieces live in
 the small library `src/lambert_thesis` (`from lambert_thesis import toy_models, mcmc, ...`), meant to be read next to the
 notebooks. [FIGURES.md](FIGURES.md) lists which notebook produces which figure.
 
@@ -71,7 +77,7 @@ NumPy, SciPy, numba, matplotlib, pandas, scikit-learn, SymPy, emcee, PyMC, ArviZ
 
 ## How this repository was made
 
-The methods, models and results come from the dissertation (S. Lambert, Göttingen 2025). This repository restructures
+The methods, models and results come from the dissertation ([doi:10.53846/goediss-11359](https://doi.org/10.53846/goediss-11359)). This repository restructures
 the original research code into notebooks and a library. The restructuring (code organisation, documentation, notebook
 text) was done with the help of the AI assistant Claude Code (Anthropic). The author reviewed the results against the
 dissertation and is responsible for the content. Deviations from the dissertation are listed in [FIGURES.md](FIGURES.md).

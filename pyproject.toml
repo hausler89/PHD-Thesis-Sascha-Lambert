@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lambert_thesis"
 version = "0.1.0"
-description = "Companion library to the dissertation of S. Lambert (2025): Bayesian inference for (active) Brownian systems."
+description = "Library for the dissertation of S. Lambert (2025): Bayesian Inference in Stochastic Biological Systems, https://doi.org/10.53846/goediss-11359"
 requires-python = ">=3.12"
 
 [tool.setuptools.packages.find]
