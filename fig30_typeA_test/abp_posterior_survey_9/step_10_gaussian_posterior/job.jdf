@@ -1,0 +1,13 @@
+Executable = run.sh
+arguments = 
+
+Error = logs/error.$(Process)
+Log   = logs/log.$(Process)
+Output = logs/output.$(Process)
+
+request_memory = 1024MB
+
++RequestFreeDisk = 10*1024
++MaxRuntime = 23*3600
+
+Queue 16

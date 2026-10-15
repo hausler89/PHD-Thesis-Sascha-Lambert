@@ -1,0 +1,12 @@
+Executable = run.sh
+arguments = 1 200 0.1 15 1000 40 $(chunk_alpha) $(chunk_k)
+
+Error = job.$(Cluster).err
+Log   = job.$(Cluster).log
+Output = chain.$(Cluster).csv
+
+request_memory = 128MB
+
++RequestFreeDisk = 10*1024
++MaxRuntime = 23*3600
+Queue chunk_alpha,chunk_k from parameters.txt
