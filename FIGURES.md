@@ -35,10 +35,10 @@ Notebooks with expensive computations have a `FULL_RESOLUTION` switch (`True`: f
 | 24 | 66 | Aspect-ratio study (M. Duchêne) | – | not included |
 | 25 | 70 | Inference process | – | illustration |
 | 26 | 72 | Orientation filtering | `03_walltorque_bayes` | computed |
-| 27 | 74 | Kalman vs particle filter | `03_walltorque_bayes` | computed |
+| 27 | 74 | Kalman vs particle filter | `03_walltorque_bayes` | computed (coarse grid; printed version computed on an HPC cluster) |
 | 28 | 75 | Gaussian envelope fitting | – | replaced |
 | 29 | 76 | Quadratic B-splines | `03_walltorque_bayes` | computed |
-| 30 | 78 | Bayesian test case (two modes, B-splines) | `03_walltorque_bayes` | computed |
+| 30 | 78 | Bayesian test case (two modes, B-splines) | `03_walltorque_bayes` | computed (panels A/B on a coarse grid; printed version computed on an HPC cluster) |
 | 31 | 79 | Posterior torque for active rods | `03_walltorque_bayes` | computed |
 | 32 | 86 | Ballistic Brownian motion noise levels | `04a_bridges_construction` | computed |
 | 33 | 91 | MVN conditioning | `04a_bridges_construction` | computed |

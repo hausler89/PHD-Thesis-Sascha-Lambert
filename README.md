@@ -36,6 +36,14 @@ python -m ipykernel install --user --name lambert-thesis
 Library modules (`src/lambert_thesis`): `toy_models`, `mcmc`, `bonds`, `surrogate`, `cytosim`, `walltorque`,
 `bridges`, `swarm_survey`, `filters`, `abp_inference`, `ppo`, `bridge_learning`, plus `utils` (seed, cache) and `plotting`.
 
+## Computations on an HPC cluster
+The likelihood grids of Figures 27 and 30A/B were computed on an HPC cluster: 1000 × 1000 (Figure 27) and 2000 × 2000
+(Figure 30A/B) parameter values, each grid split into 40 × 40 chunks that ran as separate jobs. Notebook
+`03_walltorque_bayes` evaluates these grids at coarse resolution with the same filter settings. The job scripts and the
+merging of the chunks are in the branch
+[`original_scripts`](https://gitlab.gwdg.de/NLD/activeparticles/phd-thesis-sascha-lambert/-/tree/original_scripts)
+(folders `fig27_kalman_vs_particle` and `fig30_typeA_test`).
+
 ## Data
 `data/cytosim/` contains force curves from Cytosim simulations. Authors of these data: Kristian A. Pajanonot and
 Komal Bhattacharyya (details in `data/cytosim/PROVENANCE.md`).
@@ -48,8 +56,11 @@ Expensive notebooks have a `FULL_RESOLUTION` switch (`True`: full settings, hour
 ## Running
 ```bash
 jupyter lab                                              # interactive
-jupyter nbconvert --to notebook --execute --inplace notebooks/01_bayes_basics.ipynb   # headless
+jupyter nbconvert --to notebook --execute --inplace notebooks/01_bayes_basics.ipynb   # headless, one notebook
+bash run_all.sh 8                                        # all notebooks in order, 8 threads
 ```
+`run_all.sh` writes one log per notebook to `logs/`. With `FULL_RESOLUTION = True` the complete run takes days on a
+workstation; if it is interrupted, run it again: finished notebooks are skipped and cached results are reused.
 
 ## Third-party code and references
 
