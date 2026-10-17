@@ -19,7 +19,9 @@ Apart from that, all files are unmodified.
 
 ## Legal notes
 
-- **License.** No license has been chosen for this repository yet.
+- **License.** The code in this branch is released under the MIT License, see [LICENSE](LICENSE). Third-party
+  material keeps its own terms: the CleanRL code in `ppolib.py` (MIT License, see below), and the Cytosim data, which
+  are not covered by this license (authors below).
 - **Third-party code.** `ppolib.py` contains major parts of the PPO implementation of
   [CleanRL](https://github.com/vwxyzjn/cleanrl) (`cleanrl/ppo_continuous_action.py`,
   https://docs.cleanrl.dev/rl-algorithms/ppo/#ppo_continuous_actionpy), Copyright (c) 2019 CleanRL developers,
