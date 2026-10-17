@@ -62,6 +62,11 @@ bash run_all.sh 8                                        # all notebooks in orde
 `run_all.sh` writes one log per notebook to `logs/`. With `FULL_RESOLUTION = True` the complete run takes days on a
 workstation; if it is interrupted, run it again: finished notebooks are skipped and cached results are reused.
 
+## License
+The code in this repository is released under the MIT License, see [LICENSE](LICENSE). Third-party material keeps its
+own terms: `src/lambert_thesis/ppo.py` contains code from CleanRL (MIT License, see below), and the Cytosim data in
+`data/cytosim/` are not covered by this license; their authors are named in `data/cytosim/PROVENANCE.md`.
+
 ## Third-party code and references
 
 **Code from other projects**
